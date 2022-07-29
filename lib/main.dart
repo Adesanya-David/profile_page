@@ -5,8 +5,10 @@ void main() => runApp(MaterialApp(
       home: HomePage(),
     ));
 
+// ignore: use_key_in_widget_constructors
 class HomePage extends StatefulWidget {
   @override
+  // ignore: library_private_types_in_public_api
   _HomePageState createState() => _HomePageState();
 }
 
