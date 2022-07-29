@@ -1,8 +1,7 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomePage(),
     ));
 
@@ -21,13 +20,15 @@ class _HomePageState extends State<HomePage> {
             CustomScrollView(
               slivers: <Widget>[
                 SliverAppBar(
+                  expandedHeight: 400,
                   backgroundColor: Colors.black,
                   flexibleSpace: FlexibleSpaceBar(
                     background: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('assets/images/rick.jpg'),
-                        ),
+                            image:
+                                AssetImage('assets/images/rick-and-morty.png'),
+                            fit: BoxFit.cover),
                       ),
                     ),
                   ),
